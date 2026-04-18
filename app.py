@@ -15,8 +15,12 @@ bcrypt = Bcrypt()
 migrate = Migrate()
 
 
+from flask import Flask
+from flask_cors import CORS 
+
 def create_app():
     app = Flask(__name__)
+    CORS(app)
 
     # ── Configurações ──────────────────────────────────────────
     app.config["SECRET_KEY"] = os.getenv("SECRET_KEY", "dev-secret")
@@ -31,15 +35,18 @@ def create_app():
     migrate.init_app(app, db)
 
     # ── Blueprints ────────────────────────────────────────────
-    from app.routes.auth import auth_bp
-    from app.routes.cuidador import cuidador_bp
-
+    from auth import auth_bp
+    from cuidador import cuidador_bp
+    from usuario_routes import usuario_bp
+# E se você já criou o arquivo de rotinas que conversamos:
+# from rotinas import rotinas_bp
     app.register_blueprint(auth_bp)
     app.register_blueprint(cuidador_bp)
+    app.register_blueprint(usuario_bp)
 
     # ── Cria tabelas no primeiro uso ──────────────────────────
     with app.app_context():
-        from app.models import Usuario  # noqa: garante que o modelo é importado
+        from usuario import Usuario  # noqa: garante que o modelo é importado Usuario  # noqa: garante que o modelo é importado
         db.create_all()
 
     @app.get("/")

@@ -1,7 +1,7 @@
 from flask import Blueprint, jsonify
 from flask_jwt_extended import jwt_required, get_jwt_identity
-from app.models.usuario import Usuario
-from app.utils.auth import requer_cuidador
+from usuario import Usuario
+from auth_utils import requer_cuidador
 
 cuidador_bp = Blueprint("cuidador", __name__, url_prefix="/cuidador")
 

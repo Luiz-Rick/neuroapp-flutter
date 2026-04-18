@@ -2,11 +2,9 @@ from app import db, bcrypt
 import enum
 from datetime import datetime
 
-
 class PerfilTipo(enum.Enum):
     USUARIO = "usuario"          # pessoa neurodivergente
     CUIDADOR = "cuidador"        # familiar ou responsável
-
 
 class Usuario(db.Model):
     __tablename__ = "usuarios"
