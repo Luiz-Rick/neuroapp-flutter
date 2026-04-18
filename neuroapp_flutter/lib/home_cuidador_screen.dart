@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import '../../services/auth_provider.dart';
-import '../../services/api_service.dart';
-import '../../utils/tema.dart';
+import 'auth_provider.dart';
+import 'api_service.dart';
+import 'tema.dart';
 
 class HomeCuidadorScreen extends StatefulWidget {
   const HomeCuidadorScreen({super.key});

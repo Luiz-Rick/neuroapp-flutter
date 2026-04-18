@@ -2,8 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:provider/provider.dart';
 
-import '../../services/auth_provider.dart';
-import '../../utils/tema.dart';
+import 'auth_provider.dart';
+import 'services/auth_provider.dart';
+import 'tema.dart';
+import 'utils/tema.dart';
 
 class RegistroScreen extends StatefulWidget {
   const RegistroScreen({super.key});

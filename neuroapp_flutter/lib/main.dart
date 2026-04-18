@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import 'services/auth_provider.dart';
-import 'utils/router.dart';
-import 'utils/tema.dart';
+import 'router.dart';
+import 'tema.dart';
+import 'auth_provider.dart';
 
 void main() {
   runApp(const NeuroApp());

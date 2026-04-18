@@ -86,13 +86,17 @@ class AppTema {
         ),
 
         // Cards
-        cardTheme: CardTheme(
-          color: superficie,
-          elevation: 0,
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(16),
-            side: const BorderSide(color: borda),
+        cardTheme: widget(
+          child: CardTheme(
+            color: superficie,
+            elevation: 0,
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(16),
+              side: const BorderSide(color: borda),
+            ),
           ),
         ),
       );
+      
+        static CardThemeData? widget({required CardTheme child}) {}
 }

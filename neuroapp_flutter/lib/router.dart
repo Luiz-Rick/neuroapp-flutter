@@ -2,14 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:provider/provider.dart';
 
-import '../services/auth_provider.dart';
-import '../screens/auth/splash_screen.dart';
-import '../screens/auth/login_screen.dart';
-import '../screens/auth/registro_screen.dart';
-import '../screens/usuario/home_usuario_screen.dart';
-import '../screens/cuidador/home_cuidador_screen.dart';
-
-final routerProvider = Provider<GoRouter>((ref) => appRouter);
+import 'auth_provider.dart';
+import 'splash_screen.dart';
+import 'login_screen.dart';
+import 'registro_screen.dart';
+import 'home_usuario_screen.dart';
+import 'home_cuidador_screen.dart';
 
 final GoRouter appRouter = GoRouter(
   initialLocation: '/splash',

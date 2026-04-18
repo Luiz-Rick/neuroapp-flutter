@@ -1,6 +1,6 @@
 import 'package:flutter/foundation.dart';
-import '../models/usuario.dart';
-import '../services/api_service.dart';
+import 'usuario.dart';
+import 'api_service.dart';
 
 enum AuthStatus { desconhecido, autenticado, naoAutenticado }
 

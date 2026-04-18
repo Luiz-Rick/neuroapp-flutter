@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import '../../services/auth_provider.dart';
-import '../../utils/tema.dart';
+import 'auth_provider.dart';
+import 'tema.dart';
 
 class HomeUsuarioScreen extends StatelessWidget {
   const HomeUsuarioScreen({super.key});
