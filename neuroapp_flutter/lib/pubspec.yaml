@@ -1,0 +1,44 @@
+name: neuroapp
+description: App de suporte para pessoas neurodivergentes e cuidadores.
+publish_to: none
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # HTTP e API
+  http: ^1.2.1
+  dio: ^5.4.3+1
+
+  # Armazenamento local (token JWT)
+  flutter_secure_storage: ^9.0.0
+  shared_preferences: ^2.2.3
+
+  # Navegação
+  go_router: ^13.2.4
+
+  # Estado
+  provider: ^6.1.2
+
+  # UI
+  flutter_svg: ^2.0.10+1
+  cached_network_image: ^3.3.1
+  lottie: ^3.1.0
+
+  # Ícones
+  cupertino_icons: ^1.0.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/icons/
