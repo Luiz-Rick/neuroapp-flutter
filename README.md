@@ -41,6 +41,7 @@ Para rodar este projeto de forma completa, você precisará iniciar o Back-end e
    ```bash
    pip install -r requirements.txt
    ## 👤 Autor
+( atualmente em desenvolvimento)
 **Luiz Henrique da Silva Pereira**
 *Estudante de ADS - Uninassau | Desenvolvedor Full-Stack*
 
