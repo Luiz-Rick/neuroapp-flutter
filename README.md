@@ -40,8 +40,10 @@ Para rodar este projeto de forma completa, você precisará iniciar o Back-end e
 3. Crie um ambiente virtual (opcional, mas recomendado) e instale as dependências:
    ```bash
    pip install -r requirements.txt
-   ## 👤 Autor
+   
 ( atualmente em desenvolvimento)
+
+## 👤 Autor
 **Luiz Henrique da Silva Pereira**
 *Estudante de ADS - Uninassau | Desenvolvedor Full-Stack*
 
